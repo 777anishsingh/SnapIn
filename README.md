@@ -3,7 +3,6 @@
 
 <div align="center">
   <br />
-  <a href="https://youtu.be/_sSTzz13tVY" target="_blank">
     <img src="https://github.com/777anishsingh/SnapIn/blob/main/src/assets/Screenshot%202025-06-23%20215219.png" alt="Project Banner">
   </a>
   <br />
