@@ -97,6 +97,7 @@ export const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
+            {/* Mobile Menu */}
             {menuOpen && (
                 <div className="md:hidden bg-[rgba(10,10,10,0.9)]">
                     <div className="px-2 pt-2 pb-3 space-y-1">
@@ -112,6 +113,35 @@ export const Navbar = () => {
                         >
                             Create Post
                         </Link>
+
+                        {/* Auth Buttons for Mobile */}
+                        {user ? (
+                            <div className="px-3 py-2 space-y-2">
+                                {user.user_metadata?.avatar_url && (
+                                    <img
+                                        src={user.user_metadata.avatar_url}
+                                        alt="User Avatar"
+                                        className="w-8 h-8 rounded-full object-cover"
+                                    />
+                                )}
+                                <p className="text-gray-300">{displayName}</p>
+                                <button
+                                    onClick={signOut}
+                                    className="w-full bg-red-500 text-white py-1 rounded"
+                                >
+                                    Sign Out
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="px-3 py-2">
+                                <button
+                                    onClick={signInWithGoogle}
+                                    className="w-full bg-blue-500 text-white py-1 rounded"
+                                >
+                                    Sign in with Google
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
             )}
