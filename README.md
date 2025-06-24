@@ -3,8 +3,7 @@
 
 <div align="center">
   <br />
-    <img src="https://github.com/777anishsingh/SnapIn/blob/main/src/assets/Screenshot%202025-06-23%20215219.png" alt="Project Banner">
-  </a>
+  <img src="https://github.com/777anishsingh/SnapIn/blob/main/src/assets/Screenshot%202025-06-23%20215219.png" alt="Project Banner">
   <br />
   <div>
     <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
@@ -24,19 +23,19 @@
 3. [Features](#features)
 4. [Quick Start](#quick-start)
 5. [Code Snippets](#code-snippets)
+6. [Future Roadmap](#future-roadmap)
 
 ## 🚀 Introduction
 
 SnapIn is a fully featured community forum using modern web technologies. It covers everything from real-time interactions and Google authentication to stunning glassy UI elements with glowing gradient effects. The project is a dynamic, interactive, and beautifully designed web application.
 
-
 ## ⚙️ Tech Stack
 
-- **React** for building the user interface
-- **Vite** for fast development and build processes
-- **TypeScript** for type safety and modern JavaScript features
-- **Supabase** for backend services including authentication, real-time data, and storage
-- **Tailwind CSS** for rapid and responsive styling
+- **React** for building the user interface  
+- **Vite** for fast development and build processes  
+- **TypeScript** for type safety and modern JavaScript features  
+- **Supabase** for backend services including authentication, real-time data, and storage  
+- **Tailwind CSS** for rapid and responsive styling  
 
 ## ⚡️ Features
 
@@ -65,8 +64,6 @@ SnapIn is a fully featured community forum using modern web technologies. It cov
 
 ### Cloning the Repository
 
-Run the following commands in your terminal:
-
 ```bash
 git clone https://github.com/777anishsingh/SnapIn.git
 cd SnapIn
@@ -74,15 +71,13 @@ cd SnapIn
 
 ### Installation
 
-Install the dependencies:
-
 ```bash
 npm install
 ```
 
 ### Environment Variables
 
-Create a file named `.env` in the project root and add your Supabase credentials and other configuration values:
+Create a file named `.env` in the project root and add your Supabase credentials:
 
 ```env
 VITE_SUPABASE_URL=https://your-supabase-url.supabase.co
@@ -91,17 +86,13 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 
 ### Running the Project
 
-Start the development server:
-
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🕸️ Code Snippets
-
-Below are some key code snippets from the project.
 
 ### RPC Function with Avatar URL
 
@@ -130,3 +121,19 @@ AS $$
   ORDER BY p.created_at DESC;
 $$;
 ```
+
+## 🔮 Future Roadmap
+
+SnapIn is continuously evolving, with plans to introduce more powerful features and enhance community engagement. Here's what's coming next:
+
+### 🗨️ Comment System
+- Enable users to comment on posts in real time.
+- Nested replies to facilitate meaningful conversations.
+
+### 🔗 Threaded Discussions
+- Introduce threaded posts to allow in-depth topic exploration.
+- Show reply hierarchies with collapsible UI for cleaner readability.
+
+### 🌐 Communities & Community Creation
+- Users will be able to create and join communities.
+- Each community will have its own feed, posts, and discussions.
