@@ -35,6 +35,7 @@ export const PostItem = ({ post }: Props) => {
                         <img
                             src={post.image_url}
                             alt={post.title}
+                            loading='lazy'
                             className="w-full rounded-[20px] object-cover max-h-[150px] mx-auto"
                         />
                     </div>
